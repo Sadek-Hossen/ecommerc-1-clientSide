@@ -4,7 +4,6 @@ import React from 'react'
 function ForCardPage() {
   return (
     <div>
-        
         <CardPage />
     </div>
   )

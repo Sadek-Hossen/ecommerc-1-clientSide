@@ -9,7 +9,7 @@ function ShowBlog() {
     useEffect(()=>{
         const fetchBlogs = async()=>{
             try {
-                const res = await axios.get("http://localhost:5000/api/blog/getAllBlogs");
+                const res = await axios.get("https://e-commerce1-backend.netlify.app/api/blog/getAllBlogs");
                 setFormDataBlog(res.data.blogs);
 
               

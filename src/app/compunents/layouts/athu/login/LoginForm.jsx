@@ -25,7 +25,7 @@ function LoginForm() {
 	 
 		try {
 	    const respose = await axios.post(
-			 " https://68d41937c0bcff12629088dc--econnerce1-backend.netlify.app//api/user/login",formData
+			 "https://68d41937c0bcff12629088dc--econnerce1-backend.netlify.app/api/user/login",formData
 		)	
 		
 		console.log(respose.data)

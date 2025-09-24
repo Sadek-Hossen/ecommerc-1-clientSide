@@ -12,7 +12,7 @@ export default function ManageProducts() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get("https://e-commerce1-backend.netlify.app/api/product");
+        const res = await axios.get(" https://68d41937c0bcff12629088dc--econnerce1-backend.netlify.app//api/product");
         setProducts(res.data.products); // backend যদি array return করে
       } catch (err) {
         console.error(err);
@@ -29,7 +29,7 @@ export default function ManageProducts() {
     if (!confirm("Are you sure you want to delete this product?")) return;
 
     try {
-      await axios.delete(`https://e-commerce1-backend.netlify.app/api/product/delete-product/${id}`);
+      await axios.delete(` https://68d41937c0bcff12629088dc--econnerce1-backend.netlify.app//api/product/delete-product/${id}`);
       setProducts(products.filter(p => p._id !== id));
     } catch (err) {
       console.error(err);

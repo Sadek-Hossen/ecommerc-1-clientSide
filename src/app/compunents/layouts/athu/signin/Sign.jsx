@@ -27,7 +27,7 @@ function Sign() {
 
     try {
       const respons = await axios.post(
-        "https://e-commerce1-backend.netlify.app/api/user/create-user",
+        " https://68d41937c0bcff12629088dc--econnerce1-backend.netlify.app//api/user/create-user",
         formData
       );
 

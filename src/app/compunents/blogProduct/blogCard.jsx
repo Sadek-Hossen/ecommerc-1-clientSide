@@ -35,7 +35,7 @@ const FormDataBlog = ()=>{
       };
         console.log(productData);
 
-    await axios.post("https://68d41937c0bcff12629088dc--econnerce1-backend.netlify.app/api/blog/blog-create",productData)
+    await axios.post(`${BACKEND_URL}/api/blog/blog-create",productData`)
     alert("blog added successfully")
     router.push("/addBlog")
 

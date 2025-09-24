@@ -13,7 +13,7 @@ function Product() {
      useEffect(()=>{
      const fetchData = async()=>{
      try {
-         const respos = await axios.get("https://68d41937c0bcff12629088dc--econnerce1-backend.netlify.app/api/product"   )
+         const respos = await axios.get(`${BACKEND_URL}/api/product`)
          setProducts(respos.data?.products)
          console.log(respos.data)
 

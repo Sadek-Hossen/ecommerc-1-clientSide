@@ -37,7 +37,7 @@ const FormDataFile = ()=>{
       };
         console.log(productData);
 
-    await axios.post("https://68d41937c0bcff12629088dc--econnerce1-backend.netlify.app/api/product/product-create",productData)
+    await axios.post(`${BACKEND_URL}/api/product/product-create",productData`)
     alert("Product added successfully")
     router.push("/")
 

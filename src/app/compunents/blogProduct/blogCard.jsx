@@ -12,6 +12,7 @@ const FormDataBlog = ()=>{
   const  {register, handleSubmit, formState : {errors},  } = useForm();
 
   const router = useRouter()
+    const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
   // for image
   const onSubmitData = async (data) =>{

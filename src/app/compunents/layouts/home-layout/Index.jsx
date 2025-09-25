@@ -8,8 +8,6 @@ import Product from '../allProduct/product';
 
 
 
-
-
 function Index() {
   return (
     <div>

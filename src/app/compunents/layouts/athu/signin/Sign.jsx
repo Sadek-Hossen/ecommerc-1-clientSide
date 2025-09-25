@@ -21,6 +21,7 @@ function Sign() {
   };
 
   const router = useRouter();
+    const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
   const handleSubmit = async (e) => {
     e.preventDefault();

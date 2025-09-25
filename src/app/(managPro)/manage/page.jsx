@@ -8,6 +8,9 @@ export default function ManageProducts() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  
+    const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
+
   // সব product load
   useEffect(() => {
     const fetchProducts = async () => {

@@ -6,6 +6,7 @@ import CardBlog from '../cardBlog/cardBlog';
 
 function ShowBlog() {
     const [DataBlog,setFormDataBlog] = useState([]);
+      const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
     useEffect(()=>{
         const fetchBlogs = async()=>{
             try {

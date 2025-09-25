@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 function Product() {
     const [products,setProducts] = React.useState([])
-
+       const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
      useEffect(()=>{
      const fetchData = async()=>{
      try {

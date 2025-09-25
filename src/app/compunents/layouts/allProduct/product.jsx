@@ -10,12 +10,13 @@ import Link from 'next/link'
 function Product() {
     const [products,setProducts] = React.useState([])
        const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
+       console.log(BACKEND_URL)
      useEffect(()=>{
      const fetchData = async()=>{
      try {
          const respos = await axios.get(`${BACKEND_URL}/api/product`)
          setProducts(respos.data?.products)
-         console.log(respos.data)
+         console.log(respos)
 
         } catch (error) {
         console.error("Error fetching products:", error);

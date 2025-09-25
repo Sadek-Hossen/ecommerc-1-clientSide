@@ -26,7 +26,8 @@ function LoginForm() {
 	 
 		try {
 	    const respose = await axios.post(
-			 `${BACKEND_URL}/api/user/login",formData`)	
+			 `${BACKEND_URL}/api/user/login`,
+			 formData)	
 		
 		console.log(respose.data)
       
